@@ -85,6 +85,7 @@ const Navbar: React.FC = () => {
             className="block text-center bg-yellow-400 text-white py-2 px-4 rounded-md hover:bg-yellow-500 transition"
           >
             Contact Sales
+            Heloo
           </Link>
         </div>
       </motion.div>
