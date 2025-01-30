@@ -21,19 +21,19 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <header className="bg-white shadow-md py-4 px-6">
+    <header className="bg-white shadow-md py-8 px-8">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo and Company Name */}
         <div className="flex items-center space-x-3">
           <Image src="/images/aifarm.png" alt="Logo" width={65} height={65} />
           <div className="flex flex-col">
             <span className="text-xl font-semibold text-yellow-400">AI FARM</span>
-            <span className="text-gray-600 font-medium">ROBOTICS FACTORY</span>
+            <span className="text-gray-600 font-semibold">ROBOTICS FACTORY</span>
           </div>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex space-x-6 font-medium">
+        <nav className="hidden lg:flex space-x-10 font-semibold">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
         <div className="hidden lg:block">
           <Link
             href=""
-            className="bg-yellow-400 text-white py-2 px-6 rounded-full hover:bg-yellow-500 transition"
+            className="bg-yellow-400 text-white py-3 px-4 rounded-full hover:bg-yellow-500 transition"
           >
             Contact Sales
           </Link>

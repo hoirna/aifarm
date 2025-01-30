@@ -79,10 +79,19 @@ export default function Footer() {
       title: "Support",
       items: ["FAQ", "Documentation", "Contact", "Feedback"],
     },
+    {
+      title: "Legal",
+      items: ["Privacy Policy", "Terms of Service", "License"],
+      itemLinks: [
+        "/privacy",
+        "/terms",
+        "/license",
+      ],
+    },
   ];
 
   return (
-    <footer className="bg-gray-800 text-white py-12">
+    <footer className="bg-gray-800 text-white py-10 px-6">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* Company Info & Location */}
         <div className="space-y-6">
@@ -124,7 +133,7 @@ export default function Footer() {
         </div>
 
         {/* Navigation & Links */}
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-6 px-12">
           {footerLinks.map((section, index) => (
             <FooterSection
               key={index}
@@ -135,7 +144,7 @@ export default function Footer() {
         </div>
 
         {/* Contact & Subscription */}
-        <div className="space-y-6">
+        <div className="space-y-6 px-12">
           {/* Subscription Form */}
           <div>
             <div>
