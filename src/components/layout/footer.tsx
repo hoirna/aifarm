@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Facebook, Instagram, YouTube, LinkedIn, Telegram } from "@mui/icons-material"; // MUI Icons
 
 // Footer Section Component
@@ -14,14 +14,14 @@ const FooterSection: React.FC<FooterSectionProps> = ({
   itemLinks,
 }) => (
   <div className="space-y-3">
-    <h4 className="text-lg font-semibold text-yellow-400">{title}</h4>
+    <h4 className="text-lg font-semibold text-[#F9EF19]">{title}</h4>
     <div className="space-y-2">
       {items.map((item, index) => (
         <p key={index} className="text-sm text-gray-300">
           {itemLinks?.[index] ? (
             <a
               href={itemLinks[index]}
-              className="hover:underline text-yellow-500"
+              className="hover:underline text-[#F9EF19]"
             >
               {item}
             </a>
@@ -51,7 +51,7 @@ const SocialIcon = ({
     target="_blank"
     rel="noopener noreferrer"
     aria-label={label}
-    className="text-yellow-500 hover:text-yellow-600 transition"
+    className="text-[#F9EF19] hover:text-yellow-600 transition"
   >
     <Icon sx={{ fontSize: size }} /> {/* Correct usage of the MUI Icon */}
   </a>
@@ -99,11 +99,11 @@ export default function Footer() {
             <Image
               src="/images/aifarm.png"
               alt="AI Farm Logo"
-              width={65}
+              width={70}
               height={65}
             />
             <div className="ml-3">
-              <h2 className="text-xl font-semibold text-yellow-400">AI FARM</h2>
+              <h2 className="text-xl font-semibold text-[#F9EF19]">AI FARM</h2>
               <p className="text-gray-300 font-medium">ROBOTICS FACTORY</p>
             </div>
           </div>
@@ -148,7 +148,7 @@ export default function Footer() {
           {/* Subscription Form */}
           <div>
             <div>
-              <h4 className="text-lg font-semibold text-yellow-400">
+              <h4 className="text-lg font-semibold text-[#F9EF19]">
                 Subscribe
               </h4>
               <p className="text-sm text-gray-300 mb-3">
@@ -158,9 +158,9 @@ export default function Footer() {
                 <input
                   type="email"
                   placeholder="Your email"
-                  className="border border-yellow-500 text-sm px-4 py-2 rounded-md bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                  className="border border-[#F9EF19] text-sm px-4 py-2 rounded-md bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400"
                 />
-                <button className="bg-yellow-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-yellow-600 transition-all">
+                <button className="bg-[#F9EF19] text-black px-4 py-2 rounded-md shadow-md hover:bg-yellow-400 transition-all">
                   Subscribe
                 </button>
               </div>
@@ -184,7 +184,7 @@ export default function Footer() {
 
           {/* Social Media */}
           <div className="space-y-2">
-            <h4 className="text-lg font-semibold text-yellow-400">Follow Us</h4>
+            <h4 className="text-lg font-semibold text-[#F9EF19]">Follow Us</h4>
             <div className="flex space-x-4">
             <SocialIcon
                 href="https://facebook.com"
@@ -217,7 +217,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Footer */}
-      <div className="mt-12 border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
+      <div className="mt-12 border-t border-gray-700 pt-4 text-center text-sm text-gray-300">
         © {new Date().getFullYear()} AI Farm Robotics Factory. All Rights
         Reserved.
       </div>
