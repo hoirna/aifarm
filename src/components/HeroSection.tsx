@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
   return (
     <div className="relative w-full min-h-[70vh] md:h-screen overflow-hidden flex items-center justify-center text-center px-4 bg-gradient-to-r from-yellow-200 via-amber-300 to-orange-200">
       <AutoPlayVideo
-        src="/videos/video.mp4"
+        src="/assets/videos/video.mp4"
         className="absolute top-0 left-0 w-full h-full object-cover"
       />
 
@@ -77,7 +77,7 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-white clip-triangle z-0"></div>
+      <div className="absolute bottom-0 left-0 w-full h-24 bg-gray-50 clip-triangle z-0"></div>
     </div>
   );
 };

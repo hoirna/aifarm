@@ -1,36 +1,35 @@
-import Image from "next/legacy/image";
+import { brands } from '@/components/constants/Index'; // Import the brands data
+import Image from 'next/legacy/image';
+import React from 'react';
 
-interface Brand {
+
+export interface Brand {
   src: string;
   alt: string;
   width: number;
   height: number;
 }
-
-const brands: Brand[] = [
-  { src: "/images/ford.png", alt: "Ford", width: 160, height: 80 },
-  { src: "/images/nasa.png", alt: "NASA", width: 110, height: 70 },
-  { src: "/images/tesla.png", alt: "Tesla", width: 140, height: 80 },
-  // Add more brands here
-];
-
+// BrandLogo component that displays individual brand logos
 const BrandLogo: React.FC<Brand> = ({ src, alt, width, height }) => (
-  <div className="flex items-center justify-center w-40 h-24 sm:w-52 sm:h-28 rounded-lg p-4 ">
+  <div className="flex items-center justify-center w-40 h-24 sm:w-52 sm:h-28 rounded-lg p-4">
     <Image
-      src={src}
-      alt={alt}
-      layout="intrinsic"
-      width={width}
-      height={height}
-      loading="lazy"
-      aria-label={alt}
-    />
+  src={src}
+  alt={alt}
+  layout="intrinsic" // Helps maintain aspect ratio
+  width={width}
+  height={height}
+  loading="lazy"
+  aria-label={alt}
+  className="object-contain" // Use Tailwind instead
+/>
+
   </div>
 );
 
+// TrustedBrands component to display a grid of trusted brands
 const TrustedBrands: React.FC = () => {
   return (
-    <div className="py-12 bg-white">
+    <div className="py-12 bg-gray-50">
       {/* Section Title */}
       <div className="container mx-auto text-center px-4">
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-800">

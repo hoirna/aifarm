@@ -2,9 +2,8 @@ import Link from "next/link";
 import Image from "next/legacy/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Dropdown from "../HoveredDropdown";
-import { dropdownData } from "@/components/data/DropdownData";
-
+import Dropdown from "./HoveredDropdown";
+import { dropdownData } from "@/components/constants/Index";
 interface NavLink {
   href: string;
   label: string;
@@ -22,7 +21,7 @@ const NavLinkItem: React.FC<
 > = ({ href, label }) => (
   <Link
     href={href}
-    className="relative text-gray-700 hover:text-yellow-500 transition-all duration-300 ease-in-out after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-yellow-500 after:bottom-0 after:left-0 after:transition-all after:duration-300 hover:after:w-full"
+    className="relative text-gray-900 hover:text-yellow-400 transition-all duration-400 ease-in-out after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-yellow-400 after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
   >
     {label}
   </Link>
@@ -38,22 +37,20 @@ const Navbar: React.FC<NavbarProps> = ({ links = [] }) => {
     links.length > 0
       ? links
       : [
-          { href: "/products", label: "Products" },
-          { href: "/solutions", label: "Solutions" },
+          { href: "/Product", label: "Products" },
+          { href: "Solution", label: "Solutions" },
           { href: "/industries", label: "Industries" },
-          { href: "/labs", label: "InnovationLabs" },
-          { href: "/company", label: "Company" },
-          { href: "/partners", label: "Partners" },
-          { href: "/resources", label: "Resources" },
+          { href: "/Innovation", label: "InnovationLabs" },
+          { href: "/Company", label: "Company" },
+          { href: "/Partner", label: "Partners" },
+          { href: "/Resource", label: "Resources" },
         ];
 
-  
-        const getDropdownData = () => {
-          if (!hoveredItem) return null;
-          const normalizedKey = hoveredItem.replace(/\s+/g, ""); // Remove spaces
-          return dropdownData[normalizedKey as keyof typeof dropdownData] || null;
-        };
-        
+  const getDropdownData = () => {
+    if (!hoveredItem) return null;
+    const normalizedKey = hoveredItem.replace(/\s+/g, ""); // Remove spaces
+    return dropdownData[normalizedKey as keyof typeof dropdownData] || null;
+  };
 
   useEffect(() => {
     let timeout: NodeJS.Timeout;
@@ -77,7 +74,12 @@ const Navbar: React.FC<NavbarProps> = ({ links = [] }) => {
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <Image src="/images/aifarm.png" alt="Logo" width={65} height={60} />
+          <Image
+            src="/assets/images/aifarm.png"
+            alt="Logo"
+            width={65}
+            height={60}
+          />
           <div className="flex flex-col">
             <span className="text-xl font-semibold text-[#F9EF19]">
               AI FARM
@@ -111,7 +113,7 @@ const Navbar: React.FC<NavbarProps> = ({ links = [] }) => {
         <div className="hidden lg:block">
           <Link
             href=""
-            className="bg-[#F9EF19] text-black font-medium py-3 px-4 rounded-full hover:bg-yellow-300 transition"
+            className="bg-[#F9EF19] text-black font-normal py-3 px-4 rounded-full hover:bg-yellow-300 transition"
           >
             Contact Sales
           </Link>
