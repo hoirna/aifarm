@@ -16,8 +16,6 @@ const SolutionBox: React.FC<SolutionBoxProps> = ({ imageSrc, title, description,
       {/* Image Container - Adjusted */}
       <div className="relative w-full h-52 rounded-xl overflow-hidden bg-gray-100 mb-4">
         {/* Category Badge - Positioned Inside Image */}
-      
-
         <Image 
           src={imageSrc} 
           alt={title} 
@@ -27,7 +25,6 @@ const SolutionBox: React.FC<SolutionBoxProps> = ({ imageSrc, title, description,
           className="rounded-xl h-auto w-auto"
         />
       </div>
-
       {/* Title */}
       <h2 className="text-2xl font-semibold text-gray-900 mb-2">{title}</h2>
 

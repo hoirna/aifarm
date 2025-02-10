@@ -149,7 +149,7 @@ export const dropdownData = {
 
   export const newsItems = [
     {
-      imageSrc: '/assets/images/feature1.png',
+      imageSrc: '/assets/images/product01.png',
       title: 'Picking Up',
       description: 'Efficiently pick up items with precision and ease.',
       link: '/features/picking-up',
@@ -157,7 +157,7 @@ export const dropdownData = {
       source: 'Tech News',
     },
     {
-      imageSrc: '/assets/images/feature2.png',
+      imageSrc: '/assets/images/product02.png',
       title: 'Another News',
       description: 'This is another news item.',
       link: '/features/another-news',
@@ -165,7 +165,7 @@ export const dropdownData = {
       source: 'Company Updates',
     },
     {
-      imageSrc: '/assets/images/feature3.png',
+      imageSrc: '/assets/images/product03.png',
       title: 'Yet Another News',
       description: 'This is yet another news item.',
       link: '/features/yet-another-news',
@@ -176,37 +176,37 @@ export const dropdownData = {
   
 export const solutions = [
   {
-    imageSrc: '/assets/images/feature1.png',
+    imageSrc: '/assets/images/product01.png',
     title: 'AI-Powered Automation',
     description: 'Businesses use AI to automate workflows, reduce costs, and increase efficiency.',
     link: '/solutions/ai-automation',
   },
   {
-    imageSrc: '/assets/images/feature2.png',
+    imageSrc: '/assets/images/product02.png',
     title: 'Smart Logistics & Supply Chains',
     description: 'AI-driven logistics optimize routes, reducing delays and improving deliveries.',
     link: '/solutions/smart-logistics',
   },
   {
-    imageSrc: '/assets/images/feature3.png',
+    imageSrc: '/assets/images/product03.png',
     title: 'Green Energy Revolution',
     description: 'The shift to renewable energy is transforming how we power the world.',
     link: '/solutions/green-energy',
   },
   {
-    imageSrc: '/assets/images/feature3.png',
+    imageSrc: '/assets/images/product04.png',
     title: 'Robotics in Manufacturing',
     description: 'Advanced robotics enhance precision, efficiency, and production rates.',
     link: '/solutions/robotics',
   },
   {
-    imageSrc: '/assets/images/feature2.png',
+    imageSrc: '/assets/images/product03.png',
     title: 'Blockchain for Secure Transactions',
     description: 'Decentralized networks ensure security and transparency in digital finance.',
     link: '/solutions/blockchain',
   },
   {
-    imageSrc: '/assets/images/feature1.png',
+    imageSrc: '/assets/images/product02.png',
     title: 'Blockchain for Secure Transactions',
     description: 'Decentralized networks ensure security and transparency in digital finance.',
     link: '/solutions/blockchain',
@@ -215,14 +215,14 @@ export const solutions = [
 
 export const featuredResources = [
   {
-    imageSrc: '/assets/images/feature1.png',
+    imageSrc: '/assets/images/product01.png',
     title: 'Resource Title 1',
     description: 'This is a description of the first resource.',
     link: '/resource-1',
     category: 'Blog',
   },
   {
-    imageSrc: '/assets/images/feature2.png',
+    imageSrc: '/assets/images/product02.png',
     title: 'Resource Title 2',
     description: 'This is a description of the second resource.',
     link: '/resource-2',
@@ -230,7 +230,7 @@ export const featuredResources = [
   
   },
   {
-    imageSrc: '/assets/images/feature2.png',
+    imageSrc: '/assets/images/product03.png',
     title: 'Resource Title 2',
     description: 'This is a description of the second resource.',
     link: '/resource-2',
@@ -239,15 +239,17 @@ export const featuredResources = [
   },
 ];
 
-// constants/Index.ts
 export const footerLinks = [
   {
-    title: "Company",
+    title: "Navigation",
     links: [
-      { name: "About Us", href: "/about" },
-      { name: "Careers", href: "/careers" },
-      { name: "Blog", href: "/blog" },
-      { name: "Press", href: "/press" },
+      { name: "Products", href: "/about" },
+      { name: "Solutions", href: "/careers" },
+      { name: "Industries", href: "/blog" },
+      { name: "InnovationLabs", href: "/press" },
+      { name: "Company", href: "/press" },
+      { name: "Partners", href: "/press" },
+      { name: "Resourses", href: "/press" },
     ],
   },
   {
@@ -259,7 +261,24 @@ export const footerLinks = [
       { name: "Contact Us", href: "/contact" },
     ],
   },
-  // Add other sections as needed
+  {
+    title: "Policy",
+    links: [
+      { name: "Help Center", href: "/help-center" },
+      { name: "Terms of Service", href: "/terms" },
+      { name: "Privacy Policy", href: "/privacy-policy" },
+      { name: "Contact Us", href: "/contact" },
+    ],
+  },
+  {
+    title: "Support",
+    links: [
+      { name: "Help Center", href: "/help-center" },
+      { name: "Terms of Service", href: "/terms" },
+      { name: "Privacy Policy", href: "/privacy-policy" },
+      { name: "Contact Us", href: "/contact" },
+    ],
+  },
 ];
 
 export const brands = [
@@ -270,41 +289,47 @@ export const brands = [
 
 export const products = [
   {
-    image: "/assets/images/feature1.png",
+    image: "/assets/images/product01.png",
     name: "Product 1",
     description: "High-performance robotic system.",
   },
   {
-    image: "/assets/images/feature2.png",
+    image: "/assets/images/product02.png",
     name: "Product 2",
     description: "Advanced AI-driven technology.",
   },
   {
-    image: "/assets/images/feature3.png",
+    image: "/assets/images/product03.png",
     name: "Product 3",
     description: "Precision engineering at its best.",
   },
   {
-    image: "/assets/images/feature4.png",
+    image: "/assets/images/product04.png",
     name: "Product 4",
     description: "Next-gen automation solution.",
   },
   {
-    image: "/assets/images/feature1.png",
+    image: "/assets/images/product01.png",
     name: "Product 5",
     description: "Innovative mechanical design.",
   },
   {
-    image: "/assets/images/feature2.png",
+    image: "/assets/images/product02.png",
     name: "Product 5",
     description: "Innovative mechanical design.",
   },
   {
-    image: "/assets/images/feature3.png",
+    image: "/assets/images/product03.png",
+    name: "Product 5",
+    description: "Innovative mechanical design.",
+  },
+  {
+    image: "/assets/images/product04.png",
     name: "Product 5",
     description: "Innovative mechanical design.",
   },
 ];
+
 
 // /data/innovationData.ts
 
@@ -313,7 +338,7 @@ export const innovationCards = [
     title: "AUVx LAB",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     buttonText: "See in action →",
-    imageSrc: "/assets/images/feature1.png",
+    imageSrc: "/assets/images/product01.png",
     imageAlt: "Innovation Lab showcasing robotics and automation technology",
     logoSrc: "/assets/images/aifarm.png",
     logoAlt: "AUVx Lab Logo",
@@ -322,7 +347,7 @@ export const innovationCards = [
     title: "AUVx LAB",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     buttonText: "See in action →",
-    imageSrc: "/assets/images/feature1.png",
+    imageSrc: "/assets/images/product02.png",
     imageAlt: "Innovation Lab showcasing robotics and automation technology",
     logoSrc: "/assets/images/aifarm.png",
     logoAlt: "AUVx Lab Logo",
@@ -331,7 +356,7 @@ export const innovationCards = [
     title: "AUVx LAB",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     buttonText: "See in action →",
-    imageSrc: "/assets/images/feature1.png",
+    imageSrc: "/assets/images/product03.png",
     imageAlt: "Innovation Lab showcasing robotics and automation technology",
     logoSrc: "/assets/images/aifarm.png",
     logoAlt: "AUVx Lab Logo",
@@ -340,10 +365,49 @@ export const innovationCards = [
     title: "AUVx LAB",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     buttonText: "See in action →",
-    imageSrc: "/assets/images/feature1.png",
+    imageSrc: "/assets/images/product04.png",
     imageAlt: "Innovation Lab showcasing robotics and automation technology",
     logoSrc: "/assets/images/aifarm.png",
     logoAlt: "AUVx Lab Logo",
   },
   // Add more card objects here if needed
+];
+
+export const partnersData = [
+  {
+    name: "Partner 1",
+    description: "Partner 1 is a leading company in the tech industry, providing innovative solutions.",
+    image: "/assets/images/partner.jpg",
+    link: "https://partner1.com",
+  },
+  {
+    name: "Partner 2",
+    description: "Partner 2 specializes in financial services, offering consulting and strategy.",
+    image: "/assets/images/partner.jpg",
+    link: "https://partner2.com",
+  },
+  {
+    name: "Partner 3",
+    description: "Partner 3 is a global brand known for its contributions to education and research.",
+    image: "/assets/images/partner.jpg",
+    link: "https://partner3.com",
+  },
+  {
+    name: "Partner 1",
+    description: "Partner 1 is a leading company in the tech industry, providing innovative solutions.",
+    image: "/assets/images/partner.jpg",
+    link: "https://partner1.com",
+  },
+  {
+    name: "Partner 2",
+    description: "Partner 2 specializes in financial services, offering consulting and strategy.",
+    image: "/assets/images/partner.jpg",
+    link: "https://partner2.com",
+  },
+  {
+    name: "Partner 3",
+    description: "Partner 3 is a global brand known for its contributions to education and research.",
+    image: "/assets/images/partner.jpg",
+    link: "https://partner3.com",
+  },
 ];

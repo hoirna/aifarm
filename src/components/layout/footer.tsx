@@ -93,7 +93,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-6 px-12">
+        <div className="grid grid-cols-2 gap-6 px-12 ">
           {footerLinks.map((section, index) => (
             <FooterSection
               key={index}
@@ -125,10 +125,10 @@ export default function Footer() {
           <h4 className="text-lg font-semibold text-[#F9EF19]">
             Work Schedule
           </h4>
-          <p className="text-sm text-gray-300">
+          <p className="text-md text-gray-300">
             Monday - Friday: 8:00 AM - 5:00 PM
           </p>
-          <p className="text-sm text-gray-300">Saturday: 8:00 AM - 12:00 PM</p>
+          <p className="text-md text-gray-300">Saturday: 8:00 AM - 12:00 PM</p>
           <div className="space-y-2">
             <h4 className="text-lg font-semibold text-[#F9EF19]">Follow Us</h4>
             <div className="flex space-x-4">
