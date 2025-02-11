@@ -7,7 +7,7 @@ function InnovationLab() {
       {/* Background Image */}
       <div className="absolute top-0 left-0 w-full h-full">
         <Image 
-          src="/assets/images/feature4.png" 
+          src="/assets/images/product04.png" 
           alt="Innovation Lab showcasing robotics and automation technology"  // Improved alt text for accessibility
           layout="fill"  
           objectFit="cover"  

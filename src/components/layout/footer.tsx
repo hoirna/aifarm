@@ -1,13 +1,7 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
 import { footerLinks } from "@/components/constants/Index";
-import {
-  Facebook,
-  Instagram,
-  YouTube,
-  LinkedIn,
-  Telegram,
-} from "@mui/icons-material";
+import { Facebook,Instagram,YouTube,LinkedIn,Telegram,} from "@mui/icons-material";
 
 const FooterSection: React.FC<{
   title: string;
@@ -53,7 +47,7 @@ const SocialIcon = ({
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-8 px-6">
+    <footer className="bg-[#050A30] text-white py-8 px-6">
       <div className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-3 py-12 gap-8">
         <div className="space-y-6">
           <div className="flex items-center">

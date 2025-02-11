@@ -3,7 +3,7 @@ import Solution from "@/components/Solutions";
 import Image from "next/image";
 const SolutionPage: FC = () => {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-[#000C66]">
             {/* Hero Image Section */}
             <section className="relative w-full h-[600px] bg-gray-50">
               <Image
@@ -15,9 +15,9 @@ const SolutionPage: FC = () => {
                 priority
               />
               <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-30"></div>
-              <div className="absolute inset-0 flex justify-center items-center text-white text-center px-4">
-                <h1 className="text-4xl font-bold">Explore Our Resources</h1>
-                <p className="mt-4 text-xl">Discover useful documents, tools, and guides.</p>
+              <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
+                <h1 className="text-5xl font-bold">Explore Our Solutions</h1>
+                <p className="mt-4 text-2xl">Discover useful documents, tools, and guides.</p>
               </div>
             </section>
       

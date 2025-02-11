@@ -9,12 +9,12 @@ interface SolutionProps {
 
 const Solution: React.FC<SolutionProps> = ({ showCTA = true }) => {
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-[#050A30]  py-16">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="flex items-center gap-4 mb-8">
-          <PublicIcon className="text-yellow-300" fontSize="large" />
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 text-left mb-0">
+          <PublicIcon className="text-white" fontSize="large" />
+          <h1 className="text-4xl md:text-5xl font-bold text-white text-left mb-0">
             Real World Solutions
           </h1>
         </div>

@@ -32,7 +32,7 @@ const SolutionBox: React.FC<SolutionBoxProps> = ({ imageSrc, title, description,
       <p className="text-gray-600 mb-4">{description}</p>
 
       {/* Read More Link */}
-      <Link href={link} className="text-yellow-300 font-semibold hover:text-yellow-400 transition">
+      <Link href={link} className="text-[#0000FF] font-semibold hover:text-[#000C66] transition">
         Learn More →
       </Link>
     </div>
